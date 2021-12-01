@@ -18,7 +18,7 @@ jobs:
       - name: Setup VB6 IDE
         run: | 
           powershell.exe Import-Certificate -FilePath msix/AppConsult.cer -CertStoreLocation "Cert:\LocalMachine\TrustedPeople" 
-          powershell.exe dd-AppxProvisionedPackage -Online -SkipLicense -PackagePath msix/vb6_1.02.msix
+          powershell.exe Add-AppxProvisionedPackage -Online -SkipLicense -PackagePath msix/vb6_1.02.msix
           
 
       - name: Build VB6 Project
