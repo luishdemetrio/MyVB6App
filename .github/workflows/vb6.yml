@@ -14,6 +14,7 @@ jobs:
     runs-on: windows-latest
     steps:
 
+      - uses: actions/checkout@v2
       - name: Setup VB6 IDE
         run: | 
           powershell.exe Move-Item -Path ./msix/AppConsult.cer -Destination "Cert:\LocalMachine\TrustedPeople"
@@ -24,11 +25,11 @@ jobs:
           mkdir ./artifacts
           vb6 /make ./src/Project1.vbp /outdir ./workloadvb6 
 
-       - name: Upload X86 Artifact
-         uses: actions/upload-artifact@v2
-         with:
-          name: Vb6VirtualRegistry32
-          path: ./artifacts/Project1.exe
+      - name: Upload X86 Artifact
+        uses: actions/upload-artifact@v2
+        with:
+         name: Vb6VirtualRegistry32
+         path: ./artifacts/Project1.exe
       
       - name: Create release archive X86
         run: Compress-Archive -Path ./artifacts/Project1.exe -DestinationPath ./artifacts/Project1.zip 
