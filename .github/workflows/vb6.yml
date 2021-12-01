@@ -1,6 +1,7 @@
 name: VB6 pipeline
 
 on:
+
   push:
     branches: [master]
 
