@@ -19,7 +19,7 @@ jobs:
         run: | 
           powershell.exe Import-Certificate -FilePath msix/AppConsult.cer -CertStoreLocation "Cert:\LocalMachine\TrustedPeople" 
           powershell.exe Add-AppxPackage msix/vb6_1.02.msix
-          powershell.exe Get-AppPackageLog -All | select Message
+          powershell.exe Get-AppPackageLog  | select -Last 1  -ExpandProperty Message
 
       - name: Build VB6 Project
         run: |
