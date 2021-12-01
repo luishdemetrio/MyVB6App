@@ -15,14 +15,14 @@ jobs:
     steps:
 
       - uses: actions/checkout@v2
+      - name: Install Certificate
+        run: Import-Certificate -FilePath msix/AppConsult.cer -CertStoreLocation "Cert:\LocalMachine\TrustedPeople"
+          
+ 
       - name: Setup VB6 IDE
         shell: powershell
-        run: | 
-          Import-Certificate -FilePath msix/AppConsult.cer -CertStoreLocation "Cert:\LocalMachine\TrustedPeople"
-          Add-AppxPackage msix/vb6_1.02.msix -Volume D -verbose 
+        run: Add-AppxPackage msix/vb6_1.02.msix -verbose           
           
-          
-
       - name: Build VB6 Project
         run: |
           mkdir ./artifacts
