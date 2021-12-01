@@ -3,9 +3,9 @@ name: VB6 pipeline
 on:
   push:
     branches: [master]
+
   pull_requests:
     branches: [master]
-
 
 jobs:
 
@@ -25,36 +25,33 @@ jobs:
           vb6 /make ./src/Project1.vbp /outdir ./workloadvb6 
 
        - name: Upload X86 Artifact
-      uses: actions/upload-artifact@v2
-      with:
-       name: Vb6VirtualRegistry32
-       path: ./artifacts/Project1.exe
-
-       
-    - name: Create release archive X86
-      run: Compress-Archive -Path ./artifacts/Project1.exe -DestinationPath ./artifacts/Project1.zip 
+         uses: actions/upload-artifact@v2
+         with:
+          name: Vb6VirtualRegistry32
+          path: ./artifacts/Project1.exe
       
+      - name: Create release archive X86
+        run: Compress-Archive -Path ./artifacts/Project1.exe -DestinationPath ./artifacts/Project1.zip 
+      
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+        with:
+          tag_name: v${{github.run_number}}
+          release_name: Release V${{github.run_number}}
     
-       
-    - name: Create GitHub Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
-      with:
-        tag_name: v${{github.run_number}}
-        release_name: Release V${{github.run_number}}
-    
-    - name: Upload Release Asset x86
-      id: upload-release-asset 
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: ./artifacts/Project1.zip
-        asset_name: Project1.zip
-        asset_content_type: application/zip
+      - name: Upload Release Asset x86
+        id: upload-release-asset 
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+          asset_path: ./artifacts/Project1.zip
+          asset_name: Project1.zip
+          asset_content_type: application/zip
 
     
 
