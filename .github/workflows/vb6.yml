@@ -11,7 +11,7 @@ jobs:
 
   build:
     name: Build and Deploy    
-    runs-on: windows-latest
+    runs-on: windows-10
     steps:
 
       - uses: actions/checkout@v2
@@ -19,7 +19,7 @@ jobs:
         shell: powershell
         run: | 
           Import-Certificate -FilePath msix/AppConsult.cer -CertStoreLocation "Cert:\LocalMachine\TrustedPeople"
-          Add-AppxPackage msix/vb6_1.02.msix
+          Add-AppxPackage msix/vb6_1.02.msix -verbose -ErrorAction SilentlyContinue
           Get-AppPackageLog  | select -ExpandProperty Message -First 1
           
 
