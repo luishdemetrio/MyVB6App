@@ -1,10 +1,9 @@
-name: VB6 pipeline
+name: VB6 Pipeline
 
 on:
 
   push:
     branches: [master]
-
   pull_request:
     branches: [master]
 
