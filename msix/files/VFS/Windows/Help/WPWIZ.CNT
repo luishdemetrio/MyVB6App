@@ -1,0 +1,25 @@
+:Base wpwiz.hlp>proc4
+:Title Microsoft Web Publishing Wizard
+1 Starting Microsoft Web Publishing Wizard
+2 Using Microsoft Web Publishing Wizard=IDH_USING
+1 Overview of Microsoft Web Publishing Wizard
+2 Microsoft Web Publishing Wizard Overview=IDH_OVERVIEW
+2 Select a folder or file=IDH_SELECT_FILE
+2 Select a Web server=IDH_SELECT_SERVER
+2 Name the Web server=IDH_NAME_SERVER
+2 Select your service provider=IDH_SELECT_PROVIDER
+2 Specify the URL and local directory=IDH_URL_DIRECTORY
+2 Publish your files=IDH_FINISH
+1 Publishing Your Files on the Web
+2 Publishing a single folder or file to a Web server=TASK_PUBLISHING
+2 Publishing using drag and drop=TASK_PUBLISHING_DRAG_DROP
+2 Publishing multiple files to a Web server=TASK_POSTING_MULTIPLE
+2 Adding a Web server=TASK_ADDING
+1 Service Provider Information
+2 Choose a specific provider=IDH_NO_POSTINFO
+2 Choose the FTP server and subfolder=IDH_FTPSERVER_WEBURL
+2 Choose the HTTP Post Web Posting Provider=IDH_ISP_SERVERINFO
+2 Choose the CRS Web Posting Provider=IDH_CRS_PROVIDER
+2 Configure the CRS Web Posting Provider=IDH_CRS_CONFIGURATION
+1 Troubleshooting
+2 Microsoft Web Publishing Wizard Troubleshooter=IDH_TRB

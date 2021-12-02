@@ -1,0 +1,84 @@
+﻿<![LOG[This machine is Virtual Machine]LOG]!><time="16:58:34.425+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:58:34.472+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:58:34.519+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:58:34.535+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:58:35.535+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:58:35.550+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:58:35.597+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:58:35.613+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[CDDRInstProv::CreateCCMWindowsUpdateSettingsInst: Failed to open registry key. Error Code : (0x80070002)]LOG]!><time="16:58:50.675+180" date="11-12-2020" component="DdrProvider" context="" type="3" thread="9288" file="ddrinstprov.cpp:2645">
+<![LOG[Failed to get LDAP data]LOG]!><time="16:58:52.066+180" date="11-12-2020" component="DdrProvider" context="" type="3" thread="9288" file="ddrinstprov.cpp:973">
+<![LOG[Is Redstone or above: 1]LOG]!><time="16:58:52.441+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1656">
+<![LOG[Is Workstation: 1]LOG]!><time="16:58:52.441+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1667">
+<![LOG[AU deferral is disabled by MDM Policy.]LOG]!><time="16:58:52.441+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1757">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:58:52.566+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:58:52.582+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:58:52.644+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:58:52.675+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:59:44.651+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:59:44.667+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:59:44.730+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:59:44.745+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[CDDRInstProv::CreateCCMWindowsUpdateSettingsInst: Failed to open registry key. Error Code : (0x80070002)]LOG]!><time="16:59:47.385+180" date="11-12-2020" component="DdrProvider" context="" type="3" thread="7608" file="ddrinstprov.cpp:2645">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:59:47.401+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:59:47.417+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:59:47.620+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:59:47.698+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="9288" file="ddrinstprov.cpp:1987">
+<![LOG[Failed to get LDAP data]LOG]!><time="16:59:49.370+180" date="11-12-2020" component="DdrProvider" context="" type="3" thread="7608" file="ddrinstprov.cpp:973">
+<![LOG[Is Redstone or above: 1]LOG]!><time="16:59:49.651+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1656">
+<![LOG[Is Workstation: 1]LOG]!><time="16:59:49.651+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1667">
+<![LOG[AU deferral is disabled by MDM Policy.]LOG]!><time="16:59:49.651+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1757">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:59:49.807+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:59:49.838+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="16:59:49.901+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="16:59:49.916+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:00:24.901+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:00:24.948+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:00:25.057+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:00:25.073+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1987">
+<![LOG[CDDRInstProv::CreateCCMWindowsUpdateSettingsInst: Failed to open registry key. Error Code : (0x80070002)]LOG]!><time="17:00:25.510+180" date="11-12-2020" component="DdrProvider" context="" type="3" thread="7608" file="ddrinstprov.cpp:2645">
+<![LOG[Failed to get LDAP data]LOG]!><time="17:00:26.245+180" date="11-12-2020" component="DdrProvider" context="" type="3" thread="7608" file="ddrinstprov.cpp:973">
+<![LOG[Is Redstone or above: 1]LOG]!><time="17:00:26.417+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1656">
+<![LOG[Is Workstation: 1]LOG]!><time="17:00:26.417+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1667">
+<![LOG[AU deferral is disabled by MDM Policy.]LOG]!><time="17:00:26.417+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1757">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:00:26.510+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:00:26.526+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:00:26.557+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:00:26.573+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="7608" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:04:41.912+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:04:42.025+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:04:42.694+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:04:42.755+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:04:44.002+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:04:44.075+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:04:44.390+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:04:44.491+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:05:18.637+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:05:18.650+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:05:19.259+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:05:19.482+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:05:21.925+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:05:21.935+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="17:05:22.471+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="17:05:22.532+180" date="11-12-2020" component="DdrProvider" context="" type="1" thread="1160" file="ddrinstprov.cpp:1987">
+<![LOG[CDDRInstProv::CreateCCMWindowsUpdateSettingsInst: Failed to open registry key. Error Code : (0x80070002)]LOG]!><time="13:58:57.906+180" date="01-22-2021" component="DdrProvider" context="" type="3" thread="10052" file="ddrinstprov.cpp:2645">
+<![LOG[Failed to get LDAP data]LOG]!><time="13:59:01.094+180" date="01-22-2021" component="DdrProvider" context="" type="3" thread="10052" file="ddrinstprov.cpp:973">
+<![LOG[Is Redstone or above: 1]LOG]!><time="13:59:01.640+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="10052" file="ddrinstprov.cpp:1656">
+<![LOG[Is Workstation: 1]LOG]!><time="13:59:01.640+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="10052" file="ddrinstprov.cpp:1667">
+<![LOG[AU deferral is disabled by MDM Policy.]LOG]!><time="13:59:01.640+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="10052" file="ddrinstprov.cpp:1757">
+<![LOG[This machine is Virtual Machine]LOG]!><time="13:59:02.031+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="10052" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="13:59:02.094+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="10052" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="13:59:02.266+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="10052" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="13:59:02.281+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="10052" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="15:13:35.474+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="4216" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="15:13:37.396+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="4216" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="15:13:37.721+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="4216" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="15:13:37.850+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="4216" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="15:13:38.337+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="4216" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="15:13:38.443+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="4216" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="15:13:39.185+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="4216" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="15:13:39.268+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="4216" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="15:13:52.755+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="6208" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="15:13:52.821+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="6208" file="ddrinstprov.cpp:1987">
+<![LOG[This machine is Virtual Machine]LOG]!><time="15:13:53.290+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="6208" file="ddrinstprov.cpp:1545">
+<![LOG[This machine's Host is LUISDEM-MSFT1]LOG]!><time="15:13:53.354+180" date="01-22-2021" component="DdrProvider" context="" type="1" thread="6208" file="ddrinstprov.cpp:1987">

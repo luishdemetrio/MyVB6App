@@ -1,0 +1,43 @@
+ATTRIB -R C:\~MSSETUP.T\tmp.t\acmsetup.exe
+DEL C:\~MSSETUP.T\tmp.t\acmsetup.exe
+ATTRIB -R C:\~MSSETUP.T\tmp.t\acmsetup.hlp
+DEL C:\~MSSETUP.T\tmp.t\acmsetup.hlp
+ATTRIB -R C:\~MSSETUP.T\tmp.t\mssetup.dll
+DEL C:\~MSSETUP.T\tmp.t\mssetup.dll
+ATTRIB -R C:\~MSSETUP.T\tmp.t\bboard.dll
+DEL C:\~MSSETUP.T\tmp.t\bboard.dll
+ATTRIB -R C:\~MSSETUP.T\tmp.t\pholder.dll
+DEL C:\~MSSETUP.T\tmp.t\pholder.dll
+ATTRIB -R C:\~MSSETUP.T\tmp.t\vssetup.ttf
+DEL C:\~MSSETUP.T\tmp.t\vssetup.ttf
+ATTRIB -R C:\~MSSETUP.T\tmp.t\VB98ENT.DLL
+DEL C:\~MSSETUP.T\tmp.t\VB98ENT.DLL
+ATTRIB -R C:\~MSSETUP.T\tmp.t\COMMON98.DLL
+DEL C:\~MSSETUP.T\tmp.t\COMMON98.DLL
+ATTRIB -R C:\~MSSETUP.T\tmp.t\EULA.TXT
+DEL C:\~MSSETUP.T\tmp.t\EULA.TXT
+ATTRIB -R C:\~MSSETUP.T\tmp.t\VB98ENT.INF
+DEL C:\~MSSETUP.T\tmp.t\VB98ENT.INF
+ATTRIB -R C:\~MSSETUP.T\tmp.t\VB98ENT.STF
+DEL C:\~MSSETUP.T\tmp.t\VB98ENT.STF
+ATTRIB -R C:\~MSSETUP.T\tmp.t\odbcstf.dll
+DEL C:\~MSSETUP.T\tmp.t\odbcstf.dll
+ATTRIB -R C:\~MSSETUP.T\tmp.t\odbckey.inf
+DEL C:\~MSSETUP.T\tmp.t\odbckey.inf
+ATTRIB -R C:\~MSSETUP.T\tmp.t\odbccp32.dll
+DEL C:\~MSSETUP.T\tmp.t\odbccp32.dll
+ATTRIB -R C:\~MSSETUP.T\tmp.t\odbcint.dll
+DEL C:\~MSSETUP.T\tmp.t\odbcint.dll
+ATTRIB -R C:\~MSSETUP.T\tmp.t\msvcrt40.dll
+DEL C:\~MSSETUP.T\tmp.t\msvcrt40.dll
+ATTRIB -R C:\~MSSETUP.T\tmp.t\msvcrt.dll
+DEL C:\~MSSETUP.T\tmp.t\msvcrt.dll
+ATTRIB -R C:\~MSSETUP.T\tmp.t\wpie15.exe
+DEL C:\~MSSETUP.T\tmp.t\wpie15.exe
+ATTRIB -R C:\~MSSETUP.T\tmp.t\vsscantl.dll
+DEL C:\~MSSETUP.T\tmp.t\vsscantl.dll
+ATTRIB -R C:\~MSSETUP.T\tmp.t\wwsetup.ttf
+DEL C:\~MSSETUP.T\tmp.t\wwsetup.ttf
+DEL C:\~MSSETUP.T\tmp.t\_MSSETUP._Q_
+RMDIR C:\~MSSETUP.T\tmp.t
+RMDIR C:\~MSSETUP.T

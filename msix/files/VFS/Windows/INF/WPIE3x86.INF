@@ -1,0 +1,285 @@
+;													
+;	INF for WebPost IE installation
+;
+;	Copyright (c) 1997 Microsoft Corporation
+;
+;	Notes:
+;
+;	"webpost" sections are normal current-version components
+;	"obsolete" sections are previous-version components we no longer need, so we delete them on install
+;	"old" sections are previous-version components which are still usable, so we don't install them but they are removed on uninstall
+;	"uninstall" sections are normal current-version components we don't install directly but we do want to remove on uninstall
+;
+
+
+[version]
+signature				= "$CHICAGO$"
+AdvancedINF				= 2.5, "%ERROR_WRONG_ADVPACK_VERSION%"
+
+
+;	Install instructions
+
+
+[DefaultInstall]
+SetupEngine				= SETUPAPI.DLL,"%ERROR_ENGINE_NOTFOUND%"
+CustomDestination		= CustWPDestDir
+CopyFiles				= webpost.sys.files.95,webpost.inf.files,webpost.hlp.files,webpost.main.files
+DelFiles				= obsolete.sys.files,obsolete.wp.files,obsolete.flupl.files
+RegisterOCXs			= self.registering.dlls
+AddReg					= webpost.reg
+DelReg					= obsolete.wp.reg
+UpdateInis				= webpost.ini.shortcuts
+
+
+[DefaultInstall.NT]
+CustomDestination		= CustWPDestDir
+CopyFiles				= webpost.sys.files.nt,webpost.inf.files,webpost.hlp.files,webpost.main.files
+DelFiles				= obsolete.sys.files,obsolete.wp.files,obsolete.flupl.files
+RegisterOCXs			= self.registering.dlls
+AddReg					= webpost.reg
+;DelReg					= obsolete.wp.reg
+UpdateInis				= webpost.ini.shortcuts
+
+
+;	Custom installation sections
+;	(in this case responsible for determining location of "Program Files" dir)
+
+
+[CustWPDestDir]
+; OEM SFN,ANSI LFN,ANSI SFN,OEM LFN
+49000,49001,49002,49003 = ProgFilesDir,5
+49100,49101,49102,49103 = WPFilesDir,5
+49200,49201,49202,49203 = ActiveXCustomDestination,5	;	included only to allow removal of FLUPL from old location
+
+[ProgFilesDir]
+HKLM,'Software\Microsoft\Windows\CurrentVersion','ProgramFilesDir',,"%24%"
+
+[WPFilesDir]
+,,,,"%49001%\%WP_DIR%"
+
+[ActiveXCustomDestination]
+HKLM,'SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings','ActiveXCache',,"%25%\OCCACHE"
+
+
+;	File groups
+
+
+[DestinationDirs]
+webpost.sys.files.95	= 11 ; LDID_SYS
+webpost.sys.files.nt	= 11 ; LDID_SYS
+obsolete.sys.files		= 11 ; LDID_SYS
+old.wp.files			= 11 ; LDID_SYS
+webpost.inf.files	 	= 17 ; LDID_INF
+webpost.hlp.files	 	= 18 ; LDID_HELP
+uninstall.hlp.files		= 18 ; LDID_HELP
+webpost.main.files		= 49100 ; LDID_WP_DIR
+obsolete.wp.files		= 49100 ; LDID_WP_DIR
+obsolete.flupl.files	= 49200 ; LDID_FLUPL (obsolete)
+
+[webpost.sys.files.95]
+WEBPOST.DLL,,,32
+WPWIZDLL.DLL,,,32
+PIPARSE.DLL,,,32
+POSTWPP.DLL,,,32
+CRSWPP.DLL,,,32
+FTPWPP.DLL,,,32
+FPWPP.DLL,,,32
+MSVCRT.DLL,,,16
+
+[webpost.sys.files.nt]
+;MSVCRT.DLL,,,16				; already present on NT
+WEBPOST.DLL,,,32
+WPWIZDLL.DLL,,,32
+PIPARSE.DLL,,,32
+POSTWPP.DLL,,,32
+CRSWPP.DLL,,,32
+FTPWPP.DLL,,,32
+FPWPP.DLL,,,32
+
+[obsolete.sys.files]		; 1.1 files to be deleted on install
+POSTCAB.EXE
+DEFWPP.DLL
+AOLPOST.DLL
+AOLPPOST.DLL
+AOLSHIM.EXE
+AOLTCP16.DLL
+CSWPP.DLL
+CSWPPDLL.TXT
+CISWPP.DLL
+GAUGE.DLL
+GNNPOST.DLL
+SNWPP.DLL
+
+[obsolete.flupl.files]		; old 1.5 install location for FLUPL.CAB
+FLUPL.OCX
+FLUPL.INF
+FLUPLH~1.INF
+
+[webpost.inf.files]
+WPIE3x86.INF,,,32
+
+[webpost.hlp.files]
+WPWIZ.CNT,,,32
+WPWIZ.HLP,,,32
+FLUPL.HLP,,,32
+
+[webpost.main.files]
+WPWIZ.EXE,,,32
+FLUPL.OCX,,,32
+
+[obsolete.wp.files]			; obsolete 1.1 files to be deleted on install
+README.TXT
+WEBPOST.TLB,,,32
+
+[self.registering.dlls]		; all DLLs in this section have their DllRegisterServer EPs called
+%11%\WEBPOST.DLL
+%11%\WPWIZDLL.DLL
+%11%\POSTWPP.DLL
+%11%\CRSWPP.DLL
+%11%\FTPWPP.DLL
+%11%\FPWPP.DLL
+%49100%\FLUPL.OCX
+
+[uninstall.hlp.files]
+WPWIZ.ANN,,,32
+WPWIZ.FTS,,,32
+WPWIZ.GID,,,32
+
+;	File locations
+
+
+[SourceDisksFiles]
+MSVCRT.DLL				= 55
+WEBPOST.DLL				= 55
+WPWIZDLL.DLL			= 55
+PIPARSE.DLL				= 55
+FTPWPP.DLL				= 55
+WPWIZ.EXE				= 55
+WPIEx86.INF 			= 55
+WPWIZ.HLP				= 55
+WPWIZ.CNT				= 55
+WPWIZ.ANN				= 55
+WPWIZ.FTS				= 55
+WPWIZ.GID				= 55
+FLUPL.HLP				= 55
+AOLPOST.DLL				= 55
+AOLPPOST.DLL		  	= 55
+AOLSHIM.EXE				= 55
+AOLTCP16.DLL		  	= 55
+CSWPP.DLL				= 55
+CSWPPDLL.TXT		  	= 55
+CISWPP.DLL				= 55
+GAUGE.DLL				= 55
+GNNPOST.DLL				= 55
+SNWPP.DLL				= 55
+FLUPL.OCX				= 55
+
+
+[SourceDisksNames]
+55						= %WP_DISK%,webpost.cab, 0
+
+
+;	Registry entry groups
+
+
+[obsolete.wp.reg]		; removed on install
+HKLM,"System\CurrentControlSet\Control\WebPost"
+HKLM,"System\CurrentControlSet\Services\WebPost\Providers\{3151E2E0-6C4F-11CF-86B1-00AA0060F86C}"
+HKLM,"System\CurrentControlSet\Services\WebPost\Providers\{154BC563-A27E-11CF-85F4-0020AFC51AF7}"	; AOL
+HKLM,"System\CurrentControlSet\Services\WebPost\Providers\{154BC565-A27E-11CF-85F4-0020AFC51AF7}"	; GNN
+HKLM,"System\CurrentControlSet\Services\WebPost\Providers\{154BC567-A27E-11CF-85F4-0020AFC51AF7}"	; PrimeHost
+HKLM,"System\CurrentControlSet\Services\WebPost\Providers\{ed9f3220-a1cb-11cf-a38d-00a0244c6448}"	; CompuServe
+HKLM,"System\CurrentControlSet\Services\WebPost\Providers\{ed9f3221-a1cb-11cf-a38d-00a0244c6448}"	; SpryNet
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\Flupl"
+
+[webpost.reg]
+HKCU,"Software\Microsoft\WebPost\Logging","LoggingDir",,%49101%
+HKCU,"Software\Microsoft\WebPost\Logging","WizardLogging",,"No"
+HKCU,"Software\Microsoft\WebPost\Logging","WebPostLogging",,"No"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\WebPost","DisplayName",,%UNINSTALL_NAME%
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\WebPost","QuietUninstallString",,"RunDll32 ADVPACK.DLL,LaunchINFSection %17%\wpie3x86.inf,WebPostUninstall,5"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\WebPost","RequiresIESysFile",,"4.70.1155.0"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\WebPost","UninstallString",,"RunDll32 ADVPACK.DLL,LaunchINFSection %17%\wpie3x86.inf,WebPostUninstall"
+   
+
+;	Shortcut groups
+
+
+[webpost.ini.shortcuts]
+setup.ini, progman.groups,,"WPFolder=""%PGMGRP%"""
+setup.ini, WPFolder,,"""%PGMITEM_WP%"",""""""%49100%\WPWIZ.EXE"""""""
+setup.ini, progman.groups,,"SendTo=""..\..\%SENDTO_DESC%"""
+setup.ini, SendTo,,"""%PGMITEM_WP%"",""""""%49100%\WPWIZ.EXE"""""""
+
+
+;	Uninstallation instructions
+
+
+[WebPostUninstall]
+BeginPrompt				= UninstallPrompt
+CustomDestination		= CustWPDestDir
+DelReg					= webpost.reg,uninstall.reg
+DelFiles				= webpost.sys.files.95,webpost.hlp.files,uninstall.hlp.files,webpost.main.files,old.wp.files
+UpdateInis				= uninstall.ini.shortcuts
+DelDirs					= DelWPDestDir
+UnRegisterOCXs			= self.registering.dlls
+Cleanup					= 1
+
+[WebPostUninstall.NT]
+BeginPrompt				= UninstallPrompt
+CustomDestination		= CustWPDestDir
+DelReg					= webpost.reg,uninstall.reg
+DelFiles				= webpost.sys.files.nt,webpost.hlp.files,uninstall.hlp.files,webpost.main.files,old.wp.files
+UpdateInis				= uninstall.ini.shortcuts
+DelDirs					= DelWPDestDir
+UnRegisterOCXs			= self.registering.dlls
+Cleanup					= 1
+
+[UninstallPrompt]
+Prompt					= "%UNINSTALL_PROMPT%"
+ButtonType				= YESNO
+Title					= "%PGMITEM_WP%"
+
+[DelWPDestDir]
+%49101%
+
+[uninstall.reg]
+HKCU,"Software\Microsoft\WebPost"
+HKLM,"System\CurrentControlSet\Services\WebPost"
+HKCR,"Interface\{96E31633-59F3-11D0-AD1F-00AA00A219AA}"
+HKCR,"Interface\{EDD8BBC0-9240-11CF-9ED3-00AA004C120C}"
+HKCR,"TypeLib\{02B5E1D0-8B7C-11D0-AD45-00AA00A219AA}"
+HKCR,"TypeLib\{336C8C70-A62B-11D0-AD5F-00AA00A219AA}"
+HKCR,"TypeLib\{96E31631-59F3-11D0-AD1F-00AA00A219AA}"
+HKCR,"TypeLib\{9E8DC112-8393-11D0-871B-00A0C911C862}"
+HKCR,"TypeLib\{CB1D530F-30F6-11D0-AD03-00AA00A219AA}"
+HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\WebPost"
+
+[uninstall.ini.shortcuts]
+setup.ini, progman.groups,,"WPFolder=""%PGMGRP%""
+setup.ini, WPFolder,,"""%PGMITEM_WP%"""
+setup.ini, progman.groups,,"SendTo=""..\..\%SENDTO_DESC%"""
+setup.ini, SendTo,,"""%PGMITEM_WP%"""
+
+
+;	Strings
+
+
+[strings]
+
+; Don't localize these
+
+
+; Do localize these
+
+ERROR_WRONG_ADVPACK_VERSION		= "You need a newer version of ADVPACK.DLL"
+ERROR_ENGINE_NOTFOUND			= "Cannot find the required setup engine. Aborting..."
+
+WP_DIR					= "Web Publish"
+WP_DISK					= "Web Publishing Wizard disk"
+PGMGRP					= "Microsoft Web Publishing"
+PGMITEM_WP				= "Web Publishing Wizard"
+UNINSTALL_NAME			= "Microsoft Web Publishing Wizard 1.53"
+SENDTO_DESC				= "SendTo"
+UNINSTALL_PROMPT		= "This will remove the Web Publishing Wizard from your computer. Do you wish to proceed?"
+

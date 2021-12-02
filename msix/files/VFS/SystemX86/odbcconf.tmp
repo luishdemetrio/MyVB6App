@@ -1,0 +1,3 @@
+CONFIGDRIVER "Microsoft Visual FoxPro Driver"
+CONFIGDRIVER "Microsoft Access Driver (*.mdb)"
+CONFIGDRIVER "SQL Server"
