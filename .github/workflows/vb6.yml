@@ -24,7 +24,7 @@ jobs:
       - name: Setup VB6 IDE via MSIXCore
         run: |
              $env:path+=";c:\Program Files\msixmgr"
-             msixmgr -AddPackage ./msix/vb6_1.0.3.msix -quietUX           
+             msixmgr -AddPackage msix/vb6_1.0.3.msix -quietUX           
           
       - name: Build VB6 Project
         run: |
