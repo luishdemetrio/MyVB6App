@@ -22,7 +22,7 @@ jobs:
         run: Import-Certificate -FilePath msix/AppConsult.cer -CertStoreLocation "Cert:\LocalMachine\TrustedPeople"
       
       - name: Setup VB6 IDE via MSIXCore
-        run: msixmgr -AddPackage msix/vb6_1.0.3.msix -quietUX           
+        run: msixmgr -AddPackage msix/vb6_1.0.3.msix -quietux       
           
       - name: Build VB6 Project
         run: |
