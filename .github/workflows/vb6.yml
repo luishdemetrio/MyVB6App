@@ -15,13 +15,14 @@ jobs:
     steps:
 
       - uses: actions/checkout@v2
+      - name: Setup MSIX Core
+        run: ./msix/msixmgrSetup-1.1.0.0-x64.msi /q
+
       - name: Install Certificate
         run: Import-Certificate -FilePath msix/AppConsult.cer -CertStoreLocation "Cert:\LocalMachine\TrustedPeople"
-          
- 
+      
       - name: Setup VB6 IDE
-        shell: powershell
-        run: Add-AppxPackage msix/vb6_1.02.msix -verbose           
+        run: msixmgr.exe -AddPackage msix/vb6_1.02.msix -quietUX           
           
       - name: Build VB6 Project
         run: |
