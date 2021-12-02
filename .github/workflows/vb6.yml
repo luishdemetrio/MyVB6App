@@ -21,10 +21,10 @@ jobs:
       - name: Install Certificate
         run: Import-Certificate -FilePath msix/AppConsult.cer -CertStoreLocation "Cert:\LocalMachine\TrustedPeople"
       
-      - name: Setup VB6 IDE
+      - name: Setup VB6 IDE via MSIXCore
         run: |
              $env:path+=";c:\Program Files\msixmgr"
-             msixmgr -AddPackage msix/vb6_1.02.msix -quietUX           
+             msixmgr -AddPackage ./msix/vb6_1.02.msix -quietUX           
           
       - name: Build VB6 Project
         run: |
