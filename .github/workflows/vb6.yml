@@ -9,7 +9,15 @@ on:
 
 jobs:
 
+  install:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup MSIX Core
+        run: ./msix/msixmgrSetup-1.1.0.0-x64.msi /passive
+
   build:
+    needs: install
     name: Build and Deploy    
     runs-on: windows-latest
     steps:
