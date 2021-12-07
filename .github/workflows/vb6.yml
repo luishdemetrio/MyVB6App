@@ -16,13 +16,6 @@ jobs:
       - name: Setup MSIX Core
         run: ./msix/msixmgrSetup-1.1.0.0-x64.msi /passive
 
-  build:
-    needs: install
-    name: Build and Deploy    
-    runs-on: windows-latest
-    steps:
-
-      - uses: actions/checkout@v2
       - name: Setup MSIX Core
         run: ./msix/msixmgrSetup-1.1.0.0-x64.msi /passive
 
@@ -34,6 +27,14 @@ jobs:
           $env:path+=";C:\Program Files\msixmgr"
           msixmgr -AddPackage msix\vb6_1.0.3.msix -quietux
           ${{ steps.id.outputs.name }}
+
+  build:
+    needs: install
+    name: Build and Deploy    
+    runs-on: windows-latest
+    steps:
+
+      - uses: actions/checkout@v2
           
       - name: Build VB6 Project
         run: |
